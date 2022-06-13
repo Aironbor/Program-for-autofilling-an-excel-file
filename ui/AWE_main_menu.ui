@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>535</width>
+    <height>381</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>535</width>
+    <height>381</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>535</width>
+    <height>381</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Программа для формирования заданий</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget{
+     background:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.574, stop:0 rgba(0, 111, 155, 255), stop:1 rgba(187, 218, 230, 248));
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_develop">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>330</y>
+      <width>531</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Develop by Metliaev Ivan</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>330</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image:url(:/images/logo/35th Parallel-logos1.png);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../calculate for commercial/images/images.qrc">:/logo/logo/35th Parallel-logos1.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="create_1Button">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>80</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+     background-color: qlineargradient(spread:pad, x1:0.584682, y1:0.136, x2:1, y2:0, stop:0.25 rgba(12, 63, 218, 255), stop:1 rgba(255, 255, 255, 255));
+     border-style: outset;
+     border-radius: 10px;
+	 color:white;
+	font-size:10pt;
+ }
+
+QPushButton:hover{
+     background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 171, 0, 255), stop:1 rgba(255, 255, 255, 255));
+     border-style: inset;
+	 color:black;
+ }</string>
+    </property>
+    <property name="text">
+     <string>Cоздать ведомость для СПУ</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_hello">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Добро пожаловать в главное меню!</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_hello_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>251</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lobster</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Lobster&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Программа для формирования производственных заданий</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clouse_btn">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>280</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+     background-color: qlineargradient(spread:pad, x1:0.584682, y1:0.136, x2:1, y2:0, stop:0.25 rgba(12, 63, 218, 255), stop:1 rgba(255, 255, 255, 255));
+     border-style: outset;
+     border-radius: 10px;
+	 color:white;
+ }
+
+QPushButton:hover{
+     background-color:qlineargradient(spread:reflect, x1:0, y1:0.261, x2:0.989, y2:0, stop:0.267045 rgba(255, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+     border-style: inset;
+	 color:black;
+ }
+</string>
+    </property>
+    <property name="text">
+     <string>Закрыть программу</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="create_2Button">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>140</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+     background-color: qlineargradient(spread:pad, x1:0.584682, y1:0.136, x2:1, y2:0, stop:0.25 rgba(12, 63, 218, 255), stop:1 rgba(255, 255, 255, 255));
+     border-style: outset;
+     border-radius: 10px;
+	 color:white;
+	font-size:10pt;
+ }
+
+QPushButton:hover{
+     background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 171, 0, 255), stop:1 rgba(255, 255, 255, 255));
+     border-style: inset;
+	 color:black;
+ }</string>
+    </property>
+    <property name="text">
+     <string>Создать ведомость для ПВХ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="create_3Button">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>200</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+     background-color: qlineargradient(spread:pad, x1:0.584682, y1:0.136, x2:1, y2:0, stop:0.25 rgba(12, 63, 218, 255), stop:1 rgba(255, 255, 255, 255));
+     border-style: outset;
+     border-radius: 10px;
+	 color:white;
+	font-size:10pt;
+ }
+
+QPushButton:hover{
+     background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 171, 0, 255), stop:1 rgba(255, 255, 255, 255));
+     border-style: inset;
+	 color:black;
+ }</string>
+    </property>
+    <property name="text">
+     <string>Создать ведомость для КМД</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_hello_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>231</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lobster</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Lobster&quot;;</string>
+    </property>
+    <property name="text">
+     <string>ООО Тентовые конструкци</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_hello_5">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>120</y>
+      <width>151</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lobster</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;Lobster&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../calculate for commercial/images/images.qrc">:/logo/logo/tentlogo1.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../images/images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>clouse_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>415</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>267</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

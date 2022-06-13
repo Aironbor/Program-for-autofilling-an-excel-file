@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="logo">
+    <file>logo/tentlogo1.png</file>
+    <file>logo/35th Parallel-logos1.png</file>
+  </qresource>
+  <qresource prefix="dop">
+    <file>dop/arrow.png</file>
+    <file>dop/attantion.png</file>
+    <file>dop/error.png</file>
+    <file>dop/success.png</file>
+  </qresource>
+  <qresource prefix="check">
+    <file>dialog_ok_apply_icon.png</file>
+  </qresource>
+</RCC>
